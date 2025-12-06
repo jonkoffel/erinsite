@@ -4,15 +4,19 @@ import profileImage from "@/assets/erin-koffel-profile.jpg";
 const HeroSection = () => {
   const scrollToContact = () => {
     document.querySelector("#contact")?.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
   const scrollToProjects = () => {
     document.querySelector("#projects")?.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
-  return <section id="hero" className="min-h-screen flex items-center relative overflow-hidden pt-16 sm:pt-20">
+  return (
+    <section
+      id="hero"
+      className="min-h-screen flex items-center relative overflow-hidden pt-16 sm:pt-20"
+    >
       {/* Abstract Background Shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
@@ -27,7 +31,11 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-end order-1 lg:order-2 fade-in">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-2xl" />
-                <img alt="Dr. Erin Koffel" className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-card shadow-2xl" src="lovable-uploads/b0c058fc-136b-49e0-9be3-99e3d22c56af.jpg" />
+                <img
+                  alt="Dr. Erin Koffel"
+                  className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-card shadow-2xl"
+                  src="lovable-uploads/b0c058fc-136b-49e0-9be3-99e3d22c56af.jpg"
+                />
               </div>
             </div>
 
@@ -37,17 +45,33 @@ const HeroSection = () => {
                 Transforming Behavioral Health Research Into{" "}
                 <span className="text-gradient-teal">Virtual Solutions</span>
               </h1>
-              
-              <p className="text-xl sm:text-2xl text-muted-foreground mb-4 bg-muted text-center">Clinical Psychologist | Behavioral Scientist | AI Consultant</p>
-              
-              <p className="text-base sm:text-lg text-foreground/80 mb-8 leading-relaxed">I help companies design evidence-based virtual experiences that drive patient engagement, improve clinical outcomes, and deliver measurable ROI. I specialize in user safety, trust and harm-reduction.</p>
+
+              <p className="text-xl sm:text-2xl text-muted-foreground mb-6 bg-muted text-center py-3">
+                Clinical Psychologist | Behavioral Scientist | AI Consultant
+              </p>
+
+              <p className="text-base sm:text-lg text-foreground/80 mb-8 leading-relaxed">
+                I help companies design evidence-based virtual experiences that
+                drive patient engagement, improve clinical outcomes, and deliver
+                measurable ROI. I specialize in user safety, trust and
+                harm-reduction.
+              </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg group" onClick={scrollToContact}>
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg group"
+                  onClick={scrollToContact}
+                >
                   Schedule a Consultation
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg" onClick={scrollToProjects}>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg"
+                  onClick={scrollToProjects}
+                >
                   View My Work
                 </Button>
               </div>
@@ -55,6 +79,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default HeroSection;
