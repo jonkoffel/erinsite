@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Warm Cream Background */
+    --background: 30 25% 97%;
+    --foreground: 193 35% 24%;
+
+    /* White Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 193 35% 24%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 193 35% 24%;
+
+    /* Deep Teal Primary */
+    --primary: 184 100% 23%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm Coral Secondary */
+    --secondary: 27 87% 61%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Soft Navy Muted */
+    --muted: 193 35% 24%;
+    --muted-foreground: 0 0% 100%;
+
+    /* Sage Green Accent */
+    --accent: 144 43% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Bright Cyan */
+    --cyan: 168 95% 43%;
+    --cyan-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 184 100% 23%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(30 25% 97%), hsl(0 0% 100%));
+    --gradient-teal: linear-gradient(135deg, hsl(184 100% 23%), hsl(184 100% 30%));
+    --gradient-coral: linear-gradient(135deg, hsl(27 87% 61%), hsl(27 87% 68%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px hsl(184 100% 23% / 0.08);
+    --shadow-hover: 0 8px 30px hsl(184 100% 23% / 0.15);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer utilities {
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .text-gradient-teal {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-[0_8px_30px_hsl(184_100%_23%_/_0.15)] hover:-translate-y-1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
