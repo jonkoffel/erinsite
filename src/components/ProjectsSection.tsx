@@ -36,7 +36,7 @@ const ProjectsSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-12">
           <div className="relative shrink-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl" />
-            <img alt="AI and healthcare technology collaboration" className="relative w-64 h-40 sm:w-80 sm:h-52 rounded-2xl border-2 border-card shadow-xl object-cover" src="/lovable-uploads/9493f143-aecf-408c-a030-9785e791982a.png" />
+            <img alt="AI and healthcare technology collaboration" className="relative w-64 h-40 sm:w-80 sm:h-52 rounded-2xl border-2 border-card shadow-xl object-cover" src="lovable-uploads/9493f143-aecf-408c-a030-9785e791982a.png" />
           </div>
           <div className="text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground">

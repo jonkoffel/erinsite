@@ -27,7 +27,7 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-end order-1 lg:order-2 fade-in">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-2xl" />
-                <img alt="Dr. Erin Koffel" className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-card shadow-2xl" src="/lovable-uploads/b0c058fc-136b-49e0-9be3-99e3d22c56af.jpg" />
+                <img alt="Dr. Erin Koffel" className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-card shadow-2xl" src="lovable-uploads/b0c058fc-136b-49e0-9be3-99e3d22c56af.jpg" />
               </div>
             </div>
 

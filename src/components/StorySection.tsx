@@ -25,12 +25,12 @@ const StorySection = () => {
             <div className="space-y-4">
               <div className="relative">
                 <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center overflow-hidden">
-                  <img alt="Parasurfing action shot" className="w-full h-full object-cover" src="/lovable-uploads/bb0e9389-5baa-4a55-a6a9-936a99f37155.jpg" />
+                  <img alt="Parasurfing action shot" className="w-full h-full object-cover" src="lovable-uploads/bb0e9389-5baa-4a55-a6a9-936a99f37155.jpg" />
                 </div>
               </div>
               <div className="relative">
                 <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-secondary/20 rounded-lg flex items-center justify-center overflow-hidden">
-                  <img alt="Beach portrait at Huntington Beach pier" src="/lovable-uploads/3322b0ef-6d2f-4649-8fae-ddc9c0117b44.jpg" className="w-full h-full object-contain" />
+                  <img alt="Beach portrait at Huntington Beach pier" src="lovable-uploads/3322b0ef-6d2f-4649-8fae-ddc9c0117b44.jpg" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
