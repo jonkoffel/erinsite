@@ -10,34 +10,50 @@ const PublicationsSection = () => {
             Research & Publications
           </h2>
           <p className="text-lg text-foreground/80 mb-8">
-            Contributing to the scientific literature on sleep medicine, behavioral health, and implementation science
+            Contributing to the scientific literature on sleep medicine,
+            behavioral health, and implementation science
           </p>
 
           <div className="bg-card p-6 sm:p-8 rounded-lg shadow-md mb-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">39</div>
-                <div className="text-sm text-foreground/70">Peer-reviewed publications</div>
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                  39
+                </div>
+                <div className="text-sm text-foreground/70">
+                  Peer-reviewed publications
+                </div>
               </div>
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">24</div>
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                  24
+                </div>
                 <div className="text-sm text-foreground/70">First-authored</div>
               </div>
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">4,000+</div>
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                  4,000+
+                </div>
                 <div className="text-sm text-foreground/70">Citations</div>
               </div>
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">26</div>
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                  26
+                </div>
                 <div className="text-sm text-foreground/70">H-index</div>
               </div>
             </div>
           </div>
 
-          <Button 
+          <Button
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground group"
-            onClick={() => window.open("https://www.ncbi.nlm.nih.gov/myncbi/erin.koffel.1/bibliography/public/", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://www.ncbi.nlm.nih.gov/myncbi/185s0VALkII/bibliography/public/",
+                "_blank"
+              )
+            }
           >
             View Complete Bibliography
             <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
