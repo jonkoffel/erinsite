@@ -48,7 +48,7 @@ const ProjectsSection = () => {
             <img
               alt="AI and healthcare technology collaboration"
               className="relative w-64 h-40 sm:w-80 sm:h-52 rounded-2xl border-2 border-card shadow-xl object-cover"
-              src="lovable-uploads/9493f143-aecf-408c-a030-9785e791982a.png"
+              src="media/9493f143-aecf-408c-a030-9785e791982a.png"
             />
           </div>
           <div className="text-center lg:text-left">
