@@ -32,7 +32,7 @@ const ExpertiseSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-12">
           <div className="relative shrink-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl" />
-            <img alt="Dr. Erin Koffel professional headshot" src="media/erin-koffel-headshot.jpeg" className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-2xl border-2 border-card shadow-xl object-scale-down" />
+            <img alt="Dr. Erin Koffel professional headshot" src="media/erin-koffel-headshot.jpeg" className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-2xl border-2 border-card shadow-xl object-scale-down" loading="lazy" />
           </div>
           <div className="text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground">Where Clinical Excellence Meets Virtual Innovation</h2>
